@@ -11,11 +11,10 @@
     ".detail-section h2, .detail-section p, .detail-section li, .nav-card__label";
   var IMG_SELECTOR =
     ".banner img, .profile-summary__photo img, .detail-section img.section-thumb, " +
-    ".detail-section .photo-digest img, .profile-summary__photo img, .photo-grid img, " +
-    ".nav-card__icon-img";
+    ".detail-section .photo-digest img, .profile-summary__photo img, .photo-grid img";
   var BG_SELECTOR = ".nav-card--photo";
   // 縦横比を保ったまま拡大縮小したい画像（丸アイコン・バッジ系）
-  var SQUARE_SELECTOR = ".nav-card__icon-img, .photo-digest img, .profile-summary__photo img";
+  var SQUARE_SELECTOR = ".photo-digest img, .profile-summary__photo img";
 
   var RADIUS_STEPS = ["", "8px", "16px", "50%"];
 
