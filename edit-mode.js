@@ -11,7 +11,8 @@
     ".detail-section h2, .detail-section p, .detail-section li, .nav-card__label";
   var IMG_SELECTOR =
     ".banner img, .profile-summary__photo img, .detail-section img.section-thumb, " +
-    ".detail-section .photo-digest img, .profile-summary__photo img, .photo-grid img";
+    ".detail-section .photo-digest img, .profile-summary__photo img, .photo-grid img, " +
+    ".nav-card__icon-img";
   var BG_SELECTOR = ".nav-card--photo";
 
   var pageKey = location.pathname;

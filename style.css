@@ -130,6 +130,16 @@ img {
   margin-bottom: 12px;
 }
 
+.nav-card__icon-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  margin-bottom: 12px;
+  background-color: #fff;
+}
+
 .nav-card__label {
   width: 100%;
   text-align: center;
@@ -185,20 +195,36 @@ img {
 
 .photo-digest {
   float: right;
-  width: 240px;
-  max-width: 45%;
-  margin: 0 0 20px 24px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  width: 260px;
+  max-width: 50%;
+  margin: 8px 0 28px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .photo-digest img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid var(--color-border);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px var(--color-border);
+  margin-left: -16px;
+  position: relative;
+}
+
+.photo-digest img:first-child {
+  margin-left: 0;
+}
+
+.photo-digest img:nth-child(odd) {
+  transform: translateY(-10px);
+}
+
+.photo-digest img:nth-child(even) {
+  transform: translateY(10px);
+  z-index: 1;
 }
 
 @media (max-width: 600px) {
