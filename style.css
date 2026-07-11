@@ -186,6 +186,15 @@ img {
   font-style: normal;
 }
 
+.detail-section ul {
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+.detail-section li {
+  margin-bottom: 6px;
+}
+
 footer {
   text-align: center;
   padding: 24px;
