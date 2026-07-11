@@ -195,6 +195,28 @@ img {
   margin-bottom: 6px;
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 480px;
+}
+
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--color-border);
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    max-width: 260px;
+  }
+}
+
 footer {
   text-align: center;
   padding: 24px;
